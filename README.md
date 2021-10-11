@@ -1,4 +1,5 @@
 # Simplon.co
+# Groupe 1 Cécile, Virginie et Justine
 ## _Brief_Frontend_
 
 ### Première mini application grâce à Angular 
