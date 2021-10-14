@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { UsersListComponent } from './users-list/users-list.component';
 
 const routes: Routes = [
-  // { path: 'users-list', component: UserListComponent },
-  // { path: 'user/:username', component: UserDetailComponent },
-  // { path: 'user', redirectTo: '/users-list', pathMatch: 'full' },
-  // { path: '', redirectTo: '/users-list', pathMatch: 'full' },
+  // 1ère route - 
+  // component " users-list" 
 
-//   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-//   { path: 'dashbord', component: DashboardComponent },
-//   { path: 'detail/:username', component: UtilisateurDetailComponent },
-//   { path: 'utilisateurs', component: UtilisateursComponent }
+  { path: 'usersList', component: UsersListComponent },
+    // 2ème route - 
+  // component " user-details "
+  { path: 'userDetails', component: UserDetailsComponent },
+  /** localhost: 4200  */
+  { path: '', component: UsersListComponent }
+
 ];
 
 @NgModule({
