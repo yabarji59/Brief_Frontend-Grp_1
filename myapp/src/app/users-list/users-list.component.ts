@@ -10,6 +10,10 @@ export class UsersListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
 
+  }
+  public users: any[] = [
+    {// données Json
+    
+  }]
 }
