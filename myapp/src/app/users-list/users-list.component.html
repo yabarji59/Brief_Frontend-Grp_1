@@ -1,10 +1,10 @@
 <div class="container">
   <h2 >Nos utilisateurs</h2>
 
-  <div class="card mb-3" style="max-width: 540px;" *ngFor="let item of users">
+  <div class="card mb-3 info-card" *ngFor="let item of users">
     <!-- Lien après le ngFor pour récupérer le "username" -->
     <a routerLink="/user-details/:{{ item.login.username }}">
-      <div class="row g-0">
+      <div class="row g-0 info">
         <div class="col-md-4">
           <!-- Balise figure pour placer une image -->
           <figure class="vignette">
@@ -20,8 +20,7 @@
             <p class="card-text">{{ item.email }}</p>
           </div>
         </div>
-        <div class="col-md-2">
-          
+        <div class="col-md-2 logo">
           <!-- Balise figure pour placer une image -->
           <figure>
             <!-- Afficher l'icône selon l'âge de l'utilisateur grâce à la fonction getImageByAge(user.dob.age) -->

@@ -12,7 +12,7 @@ import personsJson from '../../assets/data/JSON_Data_User.json';
 export class UsersListComponent implements OnInit {
   // Recuperer l'objet 'results' du fichier JSON
   personsJson: any = personsJson.results;
-  // Créer un tableau d'utilisateurs
+  // Créer un tableau d'utilisateurs en utilisant l'interface
   users: User[];
 
   constructor() { }

@@ -15,7 +15,7 @@ export class UserDetailsComponent implements OnInit {
   personsJson: any = personsJson.results;
   // Créer un tableau d'utilisateurs
   users: User[];
-  // Créer un utilisateur
+  // Créer un utilisateur en utilisant l'interface
   user: User;
   userNameParameter: string;
 
