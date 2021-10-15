@@ -1,12 +1,37 @@
-
-<div class="card-group">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      <a routerLink="users-list"><p class="card-text"><small class="text-muted">Retour liste</small></p></a>
+<div class="container">
+  <div class="card-group">
+    <div class="card">
+      <!-- Balise figure pour placer une image -->
+      <figure>
+        <img src="{{ user.picture.large }}" class="card-img-top" alt="Grande image">
+      </figure>
+      <div class="card-body">
+        <h5 class="card-title">{{ user.name.title }} {{ user.name.first }} {{ user.name.last | uppercase  }}</h5>
+        <p class="card-text p1"><small>{{ user.gender }}, {{ user.dob.age }} ans</small></p>
+        <p class="card-text">{{ user.location.street.number }} {{ user.location.street.name }}</p>
+        <p class="card-text"> {{ user.location.postcode }} {{ user.location.city }}</p>
+        <p class="card-text">{{ user.location.state }}</p>
+        <p class="card-text">{{ user.email }}</p>
+        <p class="card-text p2">{{ user.phone }}</p>
+        <a routerLink="/users-list">
+          <button class="btn btn-primary">
+            <p class="card-text">
+              <small>Retour liste</small>
+            </p>
+          </button>
+        </a>
+      </div>
     </div>
   </div>
 </div>
+
+<!-- <h4>{{"Genre / age: "}}</h4>
+<p>{{user.gender}} {{user.dob.age}} {{"ans"}}</p>
+<h4>{{"Adresse postale : "}}</h4>
+<p>{{user.location.street.number}} {{user.location.street.name}} </p>
+<p>{{user.location.city}}</p>
+<p>{{user.location.state}} {{user.location.postcode}}</p>
+<h4>{{"Adresse mail : "}}</h4>
+<p>{{user.email}}</p>
+<h4>{{"Téléphone: "}}</h4>
+<p>{{user.phone}}</p> -->

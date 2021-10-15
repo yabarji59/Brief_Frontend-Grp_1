@@ -1,0 +1,57 @@
+figure img {
+    width: 100%;
+}
+
+figure {
+    width: 40%;
+    margin: auto;
+}
+
+.logo {
+    padding-top: 1.3em;
+}
+
+.info {
+    padding: 1em;
+}
+
+.info-card {
+    width: 75%;
+    margin: auto;
+}
+
+.vignette {
+    /* width: 5em; */
+    /* border-radius: 100%; */
+    clip-path: ellipse(50% 50%);
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    color: #0d6efd;
+}
+
+/* Tablette */
+@media screen and (max-width: 991px) {
+    .info-card {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .card-body {
+        text-align: center;
+    }
+
+    .logo figure {
+        width: 25%;
+    }
+}
