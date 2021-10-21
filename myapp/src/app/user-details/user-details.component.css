@@ -1,0 +1,60 @@
+figure img {
+    width: 100%;
+    margin: auto;
+}
+
+figure {
+    width: 50%;
+    margin: 0;
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: auto; */
+    margin: auto;
+    /* padding-top: 2em; */
+    clip-path: ellipse(50% 50%);
+    /* border-radius: 40%;
+    overflow: hidden; */
+}
+
+.card {
+    padding-top: 2em;
+}
+
+.p1 {
+    padding-bottom: 1em;
+}
+
+.p2 {
+    padding-bottom: 3em;
+}
+
+.card-group {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+}
+
+.card-body {
+    padding: 3em;
+    color: #0d6efd;
+}
+
+p small {
+    opacity: 1;
+}
+
+/* Tablette */
+@media screen and (max-width: 991px) {
+    .card-group {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .card-group {
+        margin-top: 0.6em;
+    }
+}
