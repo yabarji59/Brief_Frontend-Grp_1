@@ -6,13 +6,12 @@ import { UsersListComponent } from './users-list/users-list.component';
 const routes: Routes = [
   // 1ère route - 
   // component " users-list" 
-
-  { path: 'usersList', component: UsersListComponent },
-    // 2ème route - 
+  { path: 'users-list', component: UsersListComponent },
+  // 2ème route - 
   // component " user-details "
-  { path: 'userDetails', component: UserDetailsComponent },
-  /** localhost: 4200  */
-  { path: '', component: UsersListComponent }
+  { path: 'user-details/:username', component: UserDetailsComponent },
+  // localhost: 4200
+  { path: '', redirectTo: '/users-list', pathMatch: 'full' }
 
 ];
 
